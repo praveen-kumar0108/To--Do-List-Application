@@ -1,0 +1,8 @@
+package com.todolistapplication.backend.service;
+
+import com.todolistapplication.backend.entity.User;
+
+public interface UserService {
+	void registerUser(User user);
+
+}

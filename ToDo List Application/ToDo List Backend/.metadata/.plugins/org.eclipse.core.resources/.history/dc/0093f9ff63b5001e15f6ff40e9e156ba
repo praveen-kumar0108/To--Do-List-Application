@@ -1,0 +1,33 @@
+package com.todolistapplication.backend.serviceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import com.todolistapplication.backend.entity.User;
+import com.todolistapplication.backend.repository.UserRepository;
+import com.todolistapplication.backend.service.UserService;
+
+public class UserServiceImpl implements UserService{
+	
+	@Autowired
+	private UserRepository userRepository;
+
+	@Override
+	public void registerUser(User user) {
+		// TODO Auto-generated method stub
+		userRepository.save(user);
+		
+	}
+
+	@Override
+	public UserDetails loadUserByUsername(String username) {
+		// TODO Auto-generated method stub
+		return userRepository.findByUsername(username);
+				
+	}
+
+	
+	
+
+}

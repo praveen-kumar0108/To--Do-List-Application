@@ -1,0 +1,5 @@
+package com.todolistapplication.backend.repository;
+
+public interface UserRepository {
+
+}

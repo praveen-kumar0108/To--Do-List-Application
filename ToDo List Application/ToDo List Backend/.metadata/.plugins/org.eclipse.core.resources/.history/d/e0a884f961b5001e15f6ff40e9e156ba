@@ -1,0 +1,21 @@
+package com.todolistapplication.backend.serviceImpl;
+
+import com.todolistapplication.backend.entity.User;
+import com.todolistapplication.backend.service.UserDetails;
+import com.todolistapplication.backend.service.UserService;
+
+public class UserServiceImpl implements UserService{
+
+	@Override
+	public void registerUser(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public UserDetails loadUserByUsername(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

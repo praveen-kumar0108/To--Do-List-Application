@@ -1,0 +1,11 @@
+package com.todolistapplication.backend.service;
+
+import org.springframework.security.core.userdetails.UserDetails;
+
+import com.todolistapplication.backend.entity.User;
+
+public interface UserService {
+	void registerUser(User user);
+    UserDetails loadUserByUsername(String email);
+
+}

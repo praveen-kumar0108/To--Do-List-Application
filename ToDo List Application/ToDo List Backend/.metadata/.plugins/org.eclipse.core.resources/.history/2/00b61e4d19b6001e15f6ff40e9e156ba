@@ -1,0 +1,15 @@
+package com.todolistapplication.backend.service;
+
+import java.util.Optional;
+
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Service;
+
+import com.todolistapplication.backend.entity.User;
+
+@Service
+public interface UserService {
+	void registerUser(User user);
+    Optional<User> loadUserByUsername(String email);
+
+}
